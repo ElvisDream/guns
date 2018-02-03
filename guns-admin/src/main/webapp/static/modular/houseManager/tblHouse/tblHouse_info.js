@@ -18,10 +18,10 @@ TblHouseInfoDlg.clearData = function() {
  * @param key 数据的名称
  * @param val 数据的具体值
  */
-TblHouseInfoDlg.set = function(key, val) {
+TblHouseInfoDlg.set = function (key, val) {
     this.tblHouseInfoData[key] = (typeof val == "undefined") ? $("#" + key).val() : val;
     return this;
-}
+};
 
 /**
  * 设置对话框中的数据

@@ -6,6 +6,8 @@ import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 
 /**
@@ -26,6 +28,7 @@ public class TblHouse extends Model<TblHouse> {
     private String houseUser;
     @TableField("house_address")
     private String houseAddress;
+    @DateTimeFormat(pattern = "YYYY-MM-DD")
     @TableField("house_date")
     private Date houseDate;
     @TableField("house_desc")
